@@ -1,0 +1,17 @@
+{
+  "name": "mhero-local-registration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline venue registration, game sessions, and leaderboards for MHERO",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check server.js && node --check lib/app.js && node --check public/app.js && node --check public/admin.js && node --check public/shared.js && node --check integrations/simulator.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "libphonenumber-js": "^1.12.24"
+  }
+}
